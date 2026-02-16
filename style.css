@@ -263,3 +263,127 @@
   background: #333;
   transform: scale(1.05);
 }
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+
+  .hero-content h1 {
+    font-size: 52px;
+    white-space: normal;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-links {
+    display: none; /* hide menu on mobile */
+  }
+
+  /* HERO */
+  .hero {
+    height: 90vh;
+    background-attachment: scroll;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-content button {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  /* SERVICES */
+  #services {
+    padding: 60px 25px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  /* ABOUT */
+  #about {
+    padding: 60px 25px;
+  }
+
+  #about p {
+    font-size: 15px;
+  }
+
+  /* CONTACT */
+  #contact {
+    padding: 60px 25px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+
+/* Small phones (max-width: 480px) */
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  #services h2,
+  #about h2,
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+}
